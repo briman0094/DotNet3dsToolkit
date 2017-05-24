@@ -58,7 +58,7 @@ namespace DotNet3dsToolkit
 
 			p.Start();
 
-			if ( this.OutputConsoleOutput )
+			if ( handlersRegistered )
 			{
 				p.BeginOutputReadLine();
 				p.BeginErrorReadLine();
