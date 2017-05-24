@@ -130,7 +130,7 @@ Public Class Form1
             pbProgress.Style = ProgressBarStyle.Marquee
 
             AddHandler c.ConsoleOutputReceived, AddressOf OnConsoleOutputReceived
-            AddHandler c.UnpackProgressed, AddressOf OnUnpackProgressed
+            AddHandler c.ProgressChanged, AddressOf OnUnpackProgressed
 
             If rbExtractAuto.Checked Then
                 lblStatus.Text = "Extracting (type auto-detected)..."
@@ -162,7 +162,7 @@ Public Class Form1
             End If
 
             RemoveHandler c.ConsoleOutputReceived, AddressOf OnConsoleOutputReceived
-            RemoveHandler c.UnpackProgressed, AddressOf OnUnpackProgressed
+            RemoveHandler c.ProgressChanged, AddressOf OnUnpackProgressed
 
             pbProgress.Value = pbProgress.Maximum
             pbProgress.Style = ProgressBarStyle.Continuous

@@ -21,7 +21,7 @@ namespace DotNet3dsToolkit.Core.Tests
             {
                 Assert.Inconclusive("Missing test ROM: Pokémon Mystery Dungeon: Explorers of Sky (US).  Place it at the following path: " + EosUsPath);
             }
-            Provider = new PhysicalIOProvider();
+	        this.Provider = new PhysicalIOProvider();
         }
 
         [TestMethod]
@@ -32,7 +32,7 @@ namespace DotNet3dsToolkit.Core.Tests
             // Right now, it just ensures there's no exceptions and that the EosUsPath exists
             using (var eosUS = new NdsRom())
             {
-                await eosUS.OpenFile(EosUsPath, Provider);
+                await eosUS.OpenFile(EosUsPath, this.Provider);
                 //await eosUS.Unpack("RawFiles-EOSUS", Provider);
             }
         }

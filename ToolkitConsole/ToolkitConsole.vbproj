@@ -11,7 +11,7 @@
     <AssemblyName>ToolkitConsole</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Console</MyType>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -190,8 +190,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DotNet3dsToolkit\DotNet3dsToolkit.vbproj">
-      <Project>{2fb4aa55-c53e-4092-a40d-e797d6084584}</Project>
+    <ProjectReference Include="..\DotNet3dsToolkit\DotNet3dsToolkit.csproj">
+      <Project>{215d9b54-4c0d-4bb7-b50e-5b3205eff0fe}</Project>
       <Name>DotNet3dsToolkit</Name>
     </ProjectReference>
   </ItemGroup>
